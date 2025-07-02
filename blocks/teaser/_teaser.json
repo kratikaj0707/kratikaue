@@ -39,7 +39,6 @@
                 "label": "Teaser Text",
                 "valueType": "string"
               },
-              
               {
                 "component": "text",
                 "name": "title",
