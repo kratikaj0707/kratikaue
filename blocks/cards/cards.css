@@ -1,8 +1,22 @@
 .cards ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
+  grid-gap: 24px;
 }
 
+.cards li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+
 .cards li {
+  background-color: var(--background-color);
   border: none;
   max-width: 350px;
   position: relative;
@@ -11,6 +25,7 @@
 }
 
 .cards .cards-card-image {
+  line-height: 0;
   display: block;
 }
 
