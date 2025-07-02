@@ -216,7 +216,7 @@
     ]
   },
   {
-    "id": "teaser",
+    "id": "banner-card",
     "fields": [
       {
         "component": "reference",
