@@ -219,17 +219,29 @@
     "id": "teaser",
     "fields": [
       {
+        "component": "reference",
+        "name": "image",
+        "label": "Teaser Image",
+        "multi": false,
+        "valueType": "string"
+      },
+      {
         "component": "text",
-        "label": "Title",
+        "name": "imageAlt",
+        "label": "Teaser Image Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
         "name": "title",
-        "value": "",
+        "label": "Teaser Title",
         "valueType": "string"
       },
       {
         "component": "select",
         "name": "titleType",
-        "value": "h1",
         "label": "Title Type",
+        "value": "h3",
         "valueType": "string",
         "options": [
           {
@@ -260,36 +272,20 @@
       },
       {
         "component": "richtext",
-        "label": "Description",
         "name": "description",
-        "value": "",
+        "label": "Teaser Description",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "label": "Cta Link",
         "name": "cta",
-        "value": "",
+        "label": "Teaser CTA Link",
         "valueType": "string"
       },
       {
         "component": "text",
-        "label": "Cta Text",
         "name": "ctaText",
-        "value": "",
-        "valueType": "string"
-      },
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false,
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Image Alt",
+        "label": "Teaser CTA Text",
         "valueType": "string"
       }
     ]
