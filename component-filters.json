@@ -20,6 +20,12 @@
     ]
   },
   {
+    "id": "card-rectangle",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"

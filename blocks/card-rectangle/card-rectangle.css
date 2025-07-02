@@ -1,0 +1,80 @@
+.card-rectangle ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.card-rectangle li {
+    background-color: var(--background-color);
+    height: 110px;
+    position: relative;
+    display: flex;
+    width: 220px;
+}
+
+.card-rectangle .cards-card-image {
+    line-height: 0;
+    display: block;
+    height: auto;
+}
+
+.card-rectangle li img,
+.card-rectangle .cards-card-image picture img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 18px;
+    height: 100%;
+}
+
+.card-rectangle .cards-card-image::before {
+    height: 100%;
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 30%);
+    border-radius: 18px;
+    z-index: 1;
+    width: 200px;
+}
+
+.card-rectangle .cards-card-image:hover::before {
+    background: rgb(0 0 0 / 45%);
+}
+
+.card-rectangle .cards-card-body {
+    z-index: 2;
+    position: absolute;
+    margin: 0;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100%;
+}
+
+.card-rectangle .cards-card-body p {
+    font-size: var(--body-font-size-xs);
+}
+
+.card-rectangle .cards-card-body h2 {
+    margin: 0;
+}
+
+@media (width >= 600px) {
+    .card-rectangle ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width >= 900px) {
+    .card-rectangle ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
