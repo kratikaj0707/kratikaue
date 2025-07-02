@@ -58,6 +58,11 @@
   text-align: center;
   width: 100%;
 }
+.cards-show-more {
+  font-size: var(--body-font-size-s);
+  margin: 16px auto;
+  display: block;
+}
 
 .cards .cards-card-body p {
   font-size: var(--body-font-size-xs);
