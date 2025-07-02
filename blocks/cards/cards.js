@@ -1,6 +1,32 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
+export async function applySeeMorePagination(ul, block, itemsPerRow = 3) {
+  // const placeholders = await fetchPlaceholders();
+  // const { buttontext } = placeholders;
+  const listItems = Array.from(ul.querySelectorAll("li"));
+  listItems.forEach((li, index) => {
+    if (index >= itemsPerRow) {
+      li.style.display = "none";
+    }
+  });
+  const button = document.createElement("button");
+  button.textContent = "Show more";
+  button.className = "cards-show-more";
+  let currentIndex = itemsPerRow;
+  button.addEventListener("click", () => {
+    const nextIndex = currentIndex + itemsPerRow;
+    listItems.slice(currentIndex, nextIndex).forEach((li) => {
+      li.style.display = "";
+    });
+    currentIndex = nextIndex;
+
+    if (currentIndex >= listItems.length) {
+      button.remove();
+    }
+  });
+  block.append(button);
+}
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
@@ -21,4 +47,5 @@ export default function decorate(block) {
   });
   block.textContent = '';
   block.append(ul);
+  applySeeMorePagination(ul, block, 3);
 }
