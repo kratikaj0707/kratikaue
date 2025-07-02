@@ -28,49 +28,57 @@
             "valueType": "string"
           },
           {
-            "component": "text",
-            "name": "imageAlt",
-            "label": "Teaser Image Alt Text",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "title",
-            "label": "Teaser Title",
-            "valueType": "string"
-          },
-          {
-            "component": "select",
-            "name": "titleType",
-            "label": "Title Type",
-            "value": "h3",
-            "valueType": "string",
-            "options": [
-              { "name": "h1", "value": "h1" },
-              { "name": "h2", "value": "h2" },
-              { "name": "h3", "value": "h3" },
-              { "name": "h4", "value": "h4" },
-              { "name": "h5", "value": "h5" },
-              { "name": "h6", "value": "h6" }
+            "component": "array",
+            "name": "content",
+            "label": "Teaser Content",
+            "valueType": "object",
+            "fields": [
+              {
+                "component": "text",
+                "name": "imageAlt",
+                "label": "Teaser Image Alt Text",
+                "valueType": "string"
+              },
+              {
+                "component": "text",
+                "name": "title",
+                "label": "Teaser Title",
+                "valueType": "string"
+              },
+              {
+                "component": "select",
+                "name": "titleType",
+                "label": "Title Type",
+                "value": "h3",
+                "valueType": "string",
+                "options": [
+                  { "name": "h1", "value": "h1" },
+                  { "name": "h2", "value": "h2" },
+                  { "name": "h3", "value": "h3" },
+                  { "name": "h4", "value": "h4" },
+                  { "name": "h5", "value": "h5" },
+                  { "name": "h6", "value": "h6" }
+                ]
+              },
+              {
+                "component": "richtext",
+                "name": "description",
+                "label": "Teaser Description",
+                "valueType": "string"
+              },
+              {
+                "component": "aem-content",
+                "name": "cta",
+                "label": "Teaser CTA Link",
+                "valueType": "string"
+              },
+              {
+                "component": "text",
+                "name": "ctaText",
+                "label": "Teaser CTA Text",
+                "valueType": "string"
+              }
             ]
-          },
-          {
-            "component": "richtext",
-            "name": "description",
-            "label": "Teaser Description",
-            "valueType": "string"
-          },
-          {
-            "component": "aem-content",
-            "name": "cta",
-            "label": "Teaser CTA Link",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "ctaText",
-            "label": "Teaser CTA Text",
-            "valueType": "string"
           }
         ]
       }
