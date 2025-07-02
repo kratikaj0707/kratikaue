@@ -36,9 +36,10 @@
               {
                 "component": "text",
                 "name": "imageAlt",
-                "label": "Teaser Image Alt Text",
+                "label": "Teaser Text",
                 "valueType": "string"
               },
+              
               {
                 "component": "text",
                 "name": "title",
