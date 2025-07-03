@@ -3,6 +3,7 @@
 export default async function decorate(block) {
 //   const placeholders = await fetchPlaceholders();
 //   const { login } = placeholders;
+console.log("login");
   const fields = [...block.querySelectorAll("p")];
   block.innerHTML = "";
 
