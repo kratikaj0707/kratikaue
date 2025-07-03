@@ -1,7 +1,7 @@
 // import { fetchPlaceholders } from "../../scripts/placeholders.js";
 
 export default async function decorate(block) {
-  const placeholders = await fetchPlaceholders();
+//   const placeholders = await fetchPlaceholders();
 //   const { login } = placeholders;
   const fields = [...block.querySelectorAll("p")];
   block.innerHTML = "";
