@@ -1,8 +1,8 @@
-import { fetchPlaceholders } from "../../scripts/placeholders.js";
+// import { fetchPlaceholders } from "../../scripts/placeholders.js";
 
 export default async function decorate(block) {
   const placeholders = await fetchPlaceholders();
-  const { login } = placeholders;
+//   const { login } = placeholders;
   const fields = [...block.querySelectorAll("p")];
   block.innerHTML = "";
 
@@ -32,7 +32,7 @@ export default async function decorate(block) {
 
   const submitBtn = document.createElement("button");
   submitBtn.type = "submit";
-  submitBtn.textContent = login;
+  submitBtn.textContent = "Login";
   form.appendChild(submitBtn);
 
   form.addEventListener("submit", async (e) => {
