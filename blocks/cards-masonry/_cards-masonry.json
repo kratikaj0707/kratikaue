@@ -43,7 +43,7 @@
             "multi": false
           },
           {
-            "component": "text",
+            "component": "richtext",
             "name": "tags",
             "label": "Tags",
             "value": "",
