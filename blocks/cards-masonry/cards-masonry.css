@@ -1,4 +1,4 @@
-.card-masonry ul {
+.cards-masonry ul {
     display: block;
     column-gap: 20px;
     column-count: 2;
@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-.card-masonry li {
+.cards-masonry li {
     break-inside: avoid;
     margin-bottom: 20px;
     display: block;
@@ -16,13 +16,13 @@
     background-color: var(--background-color);
 }
 
-.card-masonry .cards-card-image {
+.cards-masonry .cards-card-image {
     position: relative;
     cursor: pointer;
     line-height: 0;
 }
 
-.card-masonry .cards-card-image::before {
+.cards-masonry .cards-card-image::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -34,7 +34,7 @@
     margin-bottom: 10px;
 }
 
-.card-masonry .cards-card-image::after {
+.cards-masonry .cards-card-image::after {
     content: "Open";
     position: absolute;
     top: 50%;
@@ -48,13 +48,13 @@
     z-index: 2;
 }
 
-.card-masonry .cards-card-image:hover::before,
-.card-masonry .cards-card-image:hover::after {
+.cards-masonry .cards-card-image:hover::before,
+.cards-masonry .cards-card-image:hover::after {
     opacity: 1;
 }
-.card-masonry .cards-card-image picture img {
+
+.cards-masonry .cards-card-image picture img {
     height: auto;
-    aspect-ratio: auto;
     aspect-ratio: 4 / 3;
     margin-bottom: 10px;
     border-radius: 18px;
@@ -62,7 +62,7 @@
     object-fit: cover;
 }
 
-.card-masonry .cards-card-body ul {
+.cards-masonry .cards-card-body ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -75,14 +75,14 @@
     scrollbar-width: none;
 }
 
-.card-masonry .cards-card-body ul li {
+.cards-masonry .cards-card-body ul li {
     background-color: var(--link-color-grey);
     border-radius: 10px;
     padding: 2px 5px;
     margin: 0;
 }
 
-.card-masonry .cards-card-body h4 {
+.cards-masonry .cards-card-body h4 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -91,7 +91,7 @@
     margin: 0;
 }
 
-.card-masonry .cards-card-body p {
+.cards-masonry .cards-card-body p {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -101,7 +101,7 @@
     margin: 0;
 }
 
-.card-masonry ul li .favorite-icon {
+.cards-masonry ul li .favorite-icon {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -115,18 +115,18 @@
     background-image: url("/icons/white-heart.svg");
 }
 
-.card-masonry ul li .favorite-icon.is-favorite {
+.cards-masonry ul li .favorite-icon.is-favorite {
     background-image: url("/icons/heart-icon.svg");
 }
 
 @media (width >= 600px) {
-    .card-masonry ul {
+    .cards-masonry ul {
         column-count: 3;
     }
 }
 
 @media (width >= 900px) {
-    .card-masonry ul {
+    .cards-masonry ul {
         column-count: 5;
     }
 }
