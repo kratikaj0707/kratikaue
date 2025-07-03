@@ -19,6 +19,7 @@ console.log("login");
     label.textContent = name.charAt(0).toUpperCase() + name.slice(1);
     label.setAttribute("for", name);
 
+    
     const input = document.createElement("input");
     input.type = name === "password" ? "password" : "text";
     input.name = name;
