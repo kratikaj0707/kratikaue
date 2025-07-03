@@ -26,7 +26,7 @@ function getFavorites(userId) {
   }
   export default async function decorate(block) {
     const ul = document.createElement("ul");
-    const cardsBlock = block.closest(".cards");
+    const cardsBlock = block;
     const userId = localStorage.getItem("userId");
 
       const renderFromFavorites = cardsBlock.classList.contains("dynamic");
