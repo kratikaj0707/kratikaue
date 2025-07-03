@@ -207,7 +207,7 @@
     ]
   },
   {
-    "id": "card",
+    "id": "card-rectangle",
     "fields": [
       {
         "component": "reference",

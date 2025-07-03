@@ -23,15 +23,15 @@
     ]
   },
   {
-    "id": "card-masonry",
+    "id": "cards-masonry",
     "components": [
-      "card"
+      "card-masonry"
     ]
   },
   {
-    "id": "card-rectangle",
+    "id": "card-rectangles",
     "components": [
-      "card"
+      "card-rectangle"
     ]
   },
   {
