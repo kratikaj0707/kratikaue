@@ -53,7 +53,8 @@
         "fragment",
         "teaser",
         "card-rectangle",
-        "login"
+        "login",
+        "card-masonry"
       ]
     }
   ]
