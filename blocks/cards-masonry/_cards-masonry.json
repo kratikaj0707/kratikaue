@@ -43,9 +43,10 @@
             "multi": false
           },
           {
-            "component": "array",
+            "component": "text",
             "name": "tags",
             "label": "Tags",
+            "value": "",
             "valueType": "string"
           },
           {
