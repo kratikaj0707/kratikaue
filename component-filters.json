@@ -29,7 +29,7 @@
     ]
   },
   {
-    "id": "card-rectangles",
+    "id": "cards-rectangle",
     "components": [
       "card-rectangle"
     ]
