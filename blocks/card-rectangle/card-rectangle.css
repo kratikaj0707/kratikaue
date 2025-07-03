@@ -19,6 +19,7 @@
     line-height: 0;
     display: block;
     height: auto;
+    width:200px;
 }
 
 .card-rectangle li img,

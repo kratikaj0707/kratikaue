@@ -142,6 +142,25 @@
     ]
   },
   {
+    "id": "login",
+    "fields": [
+      {
+        "component": "text",
+        "label": "Field1",
+        "name": "field1",
+        "value": "",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "label": "Field2",
+        "name": "field2",
+        "value": "",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
