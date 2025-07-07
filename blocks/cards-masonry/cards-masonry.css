@@ -1,4 +1,4 @@
-/* .cards-masonry ul {
+.cards-masonry ul {
     display: block;
     column-gap: 20px;
     column-count: 2;
@@ -55,7 +55,7 @@
 .cards-masonry .cards-card-image picture img {
     height: auto;
     aspect-ratio: auto;
-    aspect-ratio: 4 / 3;
+    /* aspect-ratio: 4 / 3; */
     margin-bottom: 10px;
     border-radius: 18px;
     width: 100%;
@@ -129,4 +129,4 @@
     .cards-masonry ul {
         column-count: 5;
     }
-} */
+}
