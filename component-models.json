@@ -142,47 +142,6 @@
     ]
   },
   {
-    "id": "cards-masonry",
-    "fields": [
-      {
-        "component": "select",
-        "name": "cardType",
-        "label": "Card Type",
-        "value": "static",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Static",
-            "value": "static"
-          },
-          {
-            "name": "Dynamic",
-            "value": "dynamic"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "card-masonry",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "value": "",
-        "label": "Description",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "card-rectangle",
     "fields": [
       {
