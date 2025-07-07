@@ -18,7 +18,14 @@
       "fragment",
       "teaser",
       "cards-rectangle",
-      "login"
+      "login",
+      "cards-masonry"
+    ]
+  },
+  {
+    "id": "cards-masonry",
+    "components": [
+      "card-masonry"
     ]
   },
   {
