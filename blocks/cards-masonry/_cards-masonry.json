@@ -32,17 +32,6 @@
       }
     ],
     "models": [
-        {
-            "id": "cards-masonry",
-            "fields": [
-              "component": "reference",
-            "valueType": "string",
-            "name": "image",
-            "label": "Image",
-            "multi": false
-            ]
-          },
-      
       {
         "id": "card-masonry",
         "fields": [
