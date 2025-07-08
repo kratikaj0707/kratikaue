@@ -35,17 +35,11 @@
         {
             "id": "cards-masonry",
             "fields": [
-              {
-                "component": "select",
-                "name": "classes",
-                "label": "Card Type",
-                "value": "static",
-                "valueType": "string",
-                "options": [
-                  { "name": "Static", "value": "static" },
-                  { "name": "Dynamic", "value": "dynamic" }
-                ]
-              }
+              "component": "reference",
+            "valueType": "string",
+            "name": "image",
+            "label": "Image",
+            "multi": false
             ]
           },
       
