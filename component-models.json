@@ -142,6 +142,28 @@
     ]
   },
   {
+    "id": "cards-masonry",
+    "fields": [
+      {
+        "component": "select",
+        "name": "cardType",
+        "label": "Card Type",
+        "value": "static",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Static",
+            "value": "static"
+          },
+          {
+            "name": "Dynamic",
+            "value": "dynamic"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "card-masonry",
     "fields": [
       {
