@@ -146,7 +146,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "cardType",
+        "name": "classes",
         "label": "Card Type",
         "value": "static",
         "valueType": "string",
